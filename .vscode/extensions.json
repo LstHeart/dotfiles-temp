@@ -30,6 +30,9 @@
         "zixuanchen.vitest-explorer",
         "vue.volar",
         "sdras.vue-vscode-snippets",
-        "shenjiaolong.vue-helper"
+        "shenjiaolong.vue-helper",
+        "vitozhang.url-navigation",
+        "shudun.vszip",
+        "lstheart.vscode-wxread"
     ]
 }
