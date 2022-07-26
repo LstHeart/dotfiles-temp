@@ -33,6 +33,10 @@
         "shenjiaolong.vue-helper",
         "vitozhang.url-navigation",
         "shudun.vszip",
-        "lstheart.vscode-wxread"
+        "lstheart.vscode-wxread",
+        "editorconfig.editorconfig",
+        "github.codespaces",
+        "github.remotehub",
+        "cweijan.vscode-office"
     ]
 }
