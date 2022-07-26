@@ -1,0 +1,7 @@
+{
+    "files.autoSave": "onFocusChange",
+    "extensions.ignoreRecommendations": true,
+    "gitlens.showWelcomeOnInstall": false,
+    "gitlens.showWhatsNewAfterUpgrades": false,
+    // "github.codespaces.devcontainerChangedNotificationStyle": "none"
+}

@@ -1,23 +1,25 @@
 #!/bin/bash
-# install homebrew
-# sudo NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+# the script execute when a dev container is created (It will execute at the first time)
+echo "onCreateCommand has been executed!"
+# ENVS:
+# $CODESPACES: TRUE
+# $CODESPACE_NAME: lstheart-dotfiles-w967qx7v3grx4
+# $HOSTNAME: codespaces-9a306a
+# $HOSTTYPE: x86_64
+# $RepositoryName: dotfiles
 
 
-# install fish by homebrew
-# brew install fish
-# install fzf
-# brew install fzf &&
-# ~/.fzf/install
-# install an additional version of node using nvm
+# setup nvm
+export SCRIPTS_DIR="$PWD/scripts"
+[ -s "$SCRIPTS_DIR/setup_nvm.sh" ] && \. "$SCRIPTS_DIR/setup_nvm.sh"
 
-# sudo node -c "source /usr/local/share/nvm/nvm.sh && nvm install 16"
+# setup homebrew
+[ -s "$SCRIPTS_DIR/setup_homebrew.sh" ] && \. "$SCRIPTS_DIR/setup_homebrew.sh"
 
-# fisher install jethrokuan/z
-# fisher install andreiborisov/sponge
-# fisher install jorgebucaran/autopair.fish
-# fisher install PatrickF1/fzf.fish
-# fisher install jorgebucaran/nvm.fish
-# fisher install IlanCosman/tide@v5
-# npm install -g @antfu/ni @angular/cli@13 @angular-devkit/schematics-cli pnpm yarn vsce yo
+# setup fzf
+# brew install fzf
+# [ -s "$SCRIPTS_DIR/setup_fzf.sh" ] && \. "$SCRIPTS_DIR/setup_fzf.sh"
+
+# setup fish
+[ -s "$SCRIPTS_DIR/setup_fish.sh" ] && \. "$SCRIPTS_DIR/setup_fish.sh"

@@ -37,6 +37,7 @@
         "editorconfig.editorconfig",
         "github.codespaces",
         "github.remotehub",
-        "cweijan.vscode-office"
+        "cweijan.vscode-office",
+        "bmalehorn.vscode-fish"
     ]
 }
