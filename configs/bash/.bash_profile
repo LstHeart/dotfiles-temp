@@ -1,3 +1,6 @@
+# ~/.profile: executed by the command interpreter for login shells.
+# This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
+# exists.
 # see /usr/share/doc/bash/examples/startup-files for examples.
 # the files are located in the bash-doc package.
 
@@ -22,4 +25,7 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+if [ -f ~/.git-completion.bash ]; then
+    . ~/.git-completion.bash
+fi
