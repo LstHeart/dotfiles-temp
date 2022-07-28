@@ -15,7 +15,8 @@ cp -r $DIR/scripts $HOME
 (timeNow && echo "copy scripts done🎉") >>$LOG_FILE
 
 (timeNow && echo "copy configs") >>$LOG_FILE
-cp -r $DIR/configs/bash $HOME && cp -r $DIR/configs/fish $HOME/.config/fish
+# cp -r $DIR/configs/bash $HOME && cp -r $DIR/configs/fish $HOME/.config/fish
+cp -r $DIR/configs/bash $HOME
 (timeNow && echo "copy configs done🎉") >>$LOG_FILE
 
 # active profile
