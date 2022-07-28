@@ -14,16 +14,21 @@
   // "forwardPorts": [],
 
   // life-scripts
-  "initializeCommand": "sudo chmod -R 755 .devcontainer/initialize.sh && . .devcontainer/initialize.sh",
-  "onCreateCommand": ".devcontainer/onCreate.sh",
-  "updateContentCommand": ".devcontainer/updateContent.sh",
-  "postCreateCommand": ".devcontainer/postCreate.sh",
-  "postStartCommand": ".devcontainer/postStart.sh",
+  "initializeCommand":"echo init && sleep 5",
+  "onCreateCommand": "sleep 30 && echo oncreate",
+  "updateContentCommand": "echo updateConent && sleep 30",
+  "postCreateCommand": "echo postCreate && sleep 30",
+  "postStartCommand": "echo postStart && sleep 30",
+  // "initializeCommand": "sudo chmod -R 755 .devcontainer/initialize.sh && . .devcontainer/initialize.sh",
+  // "onCreateCommand": ".devcontainer/onCreate.sh",
+  // "updateContentCommand": ".devcontainer/updateContent.sh",
+  // "postCreateCommand": ".devcontainer/postCreate.sh",
+  // "postStartCommand": ".devcontainer/postStart.sh",
 
   // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
   "remoteUser": "vscode",
   "features": {
-    "docker-in-docker": "latest"
+    // "docker-in-docker": "latest"
   },
   // Configure tool-specific properties.
   "customizations": {

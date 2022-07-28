@@ -38,6 +38,7 @@
         "github.codespaces",
         "github.remotehub",
         "cweijan.vscode-office",
-        "bmalehorn.vscode-fish"
+        "bmalehorn.vscode-fish",
+        "emilast.LogFileHighlighter"
     ]
 }

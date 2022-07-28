@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # fisher tools
 if [ ! -d ~/.config/fish/conf.d ]; then
   mkdir -p ~/.config/fish/conf.d
