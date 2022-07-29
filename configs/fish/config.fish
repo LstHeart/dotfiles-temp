@@ -9,5 +9,5 @@ source ~/.bash_aliases
 
 # git-completion
 if test -f ~/.git-completion.bash
-    ource  ~/.git-completion.bash
+    source  ~/.git-completion.bash
 end
