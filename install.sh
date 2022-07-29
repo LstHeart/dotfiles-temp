@@ -15,8 +15,8 @@ cp -afuv $DIR/scripts $HOME
 (timeNow && echo "copy scripts done🎉") >>$LOG_FILE
 
 (timeNow && echo "copy configs") >>$LOG_FILE
-# cp -afuv $DIR/configs/bash/.* $HOME
-cp -afuv $DIR/configs/fish/* $HOME/.config/fish
+cp -afuv $DIR/configs/bash/. $HOME
+cp -afuv $DIR/configs/fish/. $HOME/.config/fish
 (timeNow && echo "copy configs done🎉") >>$LOG_FILE
 
 # active profile
