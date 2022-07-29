@@ -8,6 +8,6 @@ set fish_greeting
 source ~/.bash_aliases
 
 # git-completion
-if test -f ~/.git-completion.bash
-    source  ~/.git-completion.bash
-end
+# if test -f ~/.git-completion.bash
+#     source  ~/.git-completion.bash
+# end
