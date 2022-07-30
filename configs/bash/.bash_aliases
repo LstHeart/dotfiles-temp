@@ -1,12 +1,12 @@
 # git alias
 alias g="git"
-alias ga="git add "
+alias gad="git add ."
 alias gcl="git clone"
 alias gcm="git commit -m"
 alias gco="git checkout"
 alias gpu="git push"
 alias gpl="git pull"
-alias gl="git log --oneline"
+alias glg="git log --oneline"
 alias gst="git status"
 alias gsh="git stash"
 alias gcu-l="git config user.name 'lstheart' && git config user.email 'dennis.lstheart@qq.com'"
@@ -20,3 +20,10 @@ alias dce="docker-compose exec"
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
+# chezmoi
+alias cm='chezmoi'
+alias cme='chezmoi edit'
+alias cma='chezmoi add --autotemplate'
+alias cmcd='chezmoi cd'
+alias cmcf='chezmoi edit-config'
